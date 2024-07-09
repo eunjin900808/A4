@@ -226,3 +226,76 @@ body{
     height: 100px;
     background-color: teal;
 }
+
+.f_left{
+    width: 1000px;
+    height: 100px;
+    float: left;
+}
+
+.f_left > div{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.f_menu{border-bottom: 1px solid white;}
+
+.f_menu a{}
+.f_menu a::after{
+    content: "|";
+    padding: 0 10px;
+}
+
+.f_menu a:last-child::after{
+    display: none;
+}
+
+.family{
+    width: 200px;
+    height: 100px;
+    float: left;
+    text-align: center;
+    padding-top: 25px;
+}
+
+.family select{
+    width: 150px;
+    height: 50px;
+}
+
+/* popup 영역 */
+
+.popup{
+    width: 400px;
+    height: 600px;
+    background-color: #f2f2f2;
+    border: 10px groove #5b9bd5;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    display: none;
+}
+
+.popup h3{
+    border-bottom: 5px double gray;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.popup p{
+    padding-top: 10px;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.popup .close{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    padding: 5px 20px;
+    cursor: pointer;
+}

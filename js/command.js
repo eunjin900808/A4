@@ -33,4 +33,14 @@ $(function(){
 
     },2000);
 
+    //팝업
+
+    $(".p_up").click(function(){
+        $(".popup").show();
+    })//click
+
+    $(".close").click(function(){
+        $(".popup").hide();
+    })//click
+
 })//jquery close
